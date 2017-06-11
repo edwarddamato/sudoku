@@ -1,14 +1,14 @@
 import * as React from 'react';
-import './Game.scss';
+import './Grid.scss';
 import { Block } from '../Block/index';
 
-interface IGameProps { }
-interface IGameState {
+interface IGridProps { }
+interface IGridState {
   readonly blocks: Array<any>
 }
 
 
-export class Game extends React.Component<IGameProps, IGameState> {
+export class Grid extends React.Component<IGridProps, IGridState> {
   constructor(props: undefined) {
     super(props);
 
@@ -25,7 +25,7 @@ export class Game extends React.Component<IGameProps, IGameState> {
 
   render () {
     return (
-      <section className="component_game">
+      <section className="component_grid">
         {
           this.state.blocks.map((block, index) => {
             return <Block key={index} />;
@@ -36,4 +36,4 @@ export class Game extends React.Component<IGameProps, IGameState> {
   }
 }
 
-export default Game;
+export default Grid;

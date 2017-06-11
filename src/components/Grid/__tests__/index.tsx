@@ -1,10 +1,10 @@
 import * as React from 'react';
-import { Game } from '../index';
+import { Grid } from '../index';
 import { create } from 'react-test-renderer';
 
 it('renders correctly', () => {
-  const game = create(
-    <Game />
+  const grid = create(
+    <Grid />
   ).toJSON();
-  expect(game).toMatchSnapshot();
+  expect(grid).toMatchSnapshot();
 });

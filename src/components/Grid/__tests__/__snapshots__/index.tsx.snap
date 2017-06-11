@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <section
-  className="component_game"
+  className="component_grid"
 >
   <section
     className="component_game-block"

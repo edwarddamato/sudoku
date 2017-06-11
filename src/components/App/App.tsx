@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Game } from '../Game/index';
+import { Grid } from '../Grid/index';
 import './App.scss';
 
 interface IAppState {
@@ -22,7 +22,7 @@ export class App extends React.Component<undefined, IAppState> {
     return (
       <div className="root_container">
         {
-          <Game />
+          <Grid />
         }
       </div>
     );

@@ -5,7 +5,7 @@ exports[`renders correctly 1`] = `
   className="root_container"
 >
   <section
-    className="component_game"
+    className="component_grid"
   >
     <section
       className="component_game-block"
