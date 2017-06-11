@@ -1,0 +1,11 @@
+@import "../../styles/vars";
+
+.component {
+  &_game-number {
+    border: 1px dotted $primary-color;
+    width: calc(100%/3);
+    height: calc(100%/3);
+    display: inline-block;
+    vertical-align: top;
+  }
+}

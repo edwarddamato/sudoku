@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Moo } from '../Moo/index';
+import { Game } from '../Game/index';
 import './App.scss';
 
 interface IAppState {
@@ -21,11 +21,8 @@ export class App extends React.Component<undefined, IAppState> {
   render () {
     return (
       <div className="root_container">
-        <h1>Let's get a Github user</h1>
         {
-          this.state.user
-          ? <Moo />
-          : null
+          <Game />
         }
       </div>
     );
