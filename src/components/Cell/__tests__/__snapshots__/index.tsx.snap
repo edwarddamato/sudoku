@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="component_game-cell"
+>
+  <input
+    className="game-cell_input"
+    type="number"
+  />
+</div>
+`;

@@ -1,0 +1,39 @@
+@mixin grid-borders($factor) {
+  $factorIndex0: $factor - 1;
+  $totalBlocks: $factor * $factor;
+
+  width: calc(100%/#{$factor});
+  height: calc(100%/#{$factor});
+
+  // top edge borders
+  @for $i from 1 through $factor
+  {
+    &:nth-child(#{$i}) {
+      border-top: none;
+    }
+  }
+
+  // left edge borders
+  @for $i from 0 through $factorIndex0
+  {
+    &:nth-child(#{($i * $factor) + 1}) {
+      border-left: none;
+    }
+  }
+
+  // right edge borders
+  @for $i from 1 through $factor
+  {
+    &:nth-child(#{$i * $factor}) {
+      border-right: none;
+    }
+  }
+
+  // bottom edge borders
+  @for $i from ($totalBlocks - $factorIndex0) through $totalBlocks
+  {
+    &:nth-child(#{$i}) {
+      border-bottom: none;
+    }
+  }
+}

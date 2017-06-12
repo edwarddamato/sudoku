@@ -1,10 +1,10 @@
 import * as React from 'react';
 import './Block.scss';
-import { Number } from '../Number/index';
+import { Cell } from '../Cell/index';
 
 interface IBlockProps { }
 interface IBlockState {
-  readonly numbers: Array<any>
+  readonly cells: Array<any>
 }
 
 export class Block extends React.Component<IBlockProps, IBlockState> {
@@ -12,26 +12,26 @@ export class Block extends React.Component<IBlockProps, IBlockState> {
     super(props);
 
     this.state = {
-      numbers: []
+      cells: []
     };
   }
 
 
   componentDidMount () {
-    let numbers = new Array<any>();
-    for (let count = 0; count < 9; count++) numbers.push({});
-    this.setState({ numbers });
+    let cells = new Array<any>();
+    for (let count = 0; count < 9; count++) cells.push({});
+    this.setState({ cells });
   }
 
   render () {
     return (
-      <section className="component_game-block">
+      <div className="component_game-block">
         {
-          this.state.numbers.map((number, index) => {
-            return <Number key={index} />;
+          this.state.cells.map((cell, index) => {
+            return <Cell key={index} />;
           })
         }
-      </section>
+      </div>
     );
   }
 }

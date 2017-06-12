@@ -1,10 +1,10 @@
 import * as React from 'react';
-import { Number } from '../index';
+import { Cell } from '../index';
 import { create } from 'react-test-renderer';
 
 it('renders correctly', () => {
   const number = create(
-    <Number />
+    <Cell />
   ).toJSON();
   expect(number).toMatchSnapshot();
 });
