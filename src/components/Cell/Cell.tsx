@@ -10,12 +10,18 @@ export class Cell extends React.Component<ICellProps, ICellState> {
 
     this.state = {
     };
+
+    this.handleMouseEnter = this.handleMouseEnter.bind(this);
+  }
+
+  handleMouseEnter(e: React.MouseEvent<HTMLInputElement>): void {
+    console.log(e);
   }
 
   render () {
     return (
       <div className="component_game-cell">
-        <input className="game-cell_input" type="number" />
+        <input onMouseEnter={this.handleMouseEnter} className="game-cell_input" maxLength={1} type="text" />
       </div>
     );
   }

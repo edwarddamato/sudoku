@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="component_status"
+>
+  <ul
+    className="status_list"
+  >
+    <li
+      className="status_list-item"
+    >
+      <div
+        className="status_item-label"
+      >
+        Current Block
+      </div>
+      <div
+        className="status_item-value"
+      >
+        0
+      </div>
+    </li>
+    <li
+      className="status_list-item"
+    >
+      <div
+        className="status_item-label"
+      >
+        Current Coords
+      </div>
+      <div
+        className="status_item-value"
+      >
+        0, 0
+      </div>
+    </li>
+  </ul>
+</div>
+`;

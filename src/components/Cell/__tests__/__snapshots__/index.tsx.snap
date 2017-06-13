@@ -6,7 +6,9 @@ exports[`renders correctly 1`] = `
 >
   <input
     className="game-cell_input"
-    type="number"
+    maxLength={1}
+    onMouseEnter={[Function]}
+    type="text"
   />
 </div>
 `;

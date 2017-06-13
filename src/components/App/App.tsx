@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Grid } from '../Grid/index';
+import { Status } from '../Status/index';
 import './App.scss';
 
 interface IAppState {
@@ -21,9 +22,8 @@ export class App extends React.Component<undefined, IAppState> {
   render () {
     return (
       <div className="root_container">
-        {
-          <Grid />
-        }
+        <Status />
+        <Grid />
       </div>
     );
   }

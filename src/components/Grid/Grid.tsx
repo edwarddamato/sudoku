@@ -27,9 +27,7 @@ export class Grid extends React.Component<IGridProps, IGridState> {
     return (
       <section className="component_grid">
         {
-          this.state.blocks.map((block, index) => {
-            return <Block key={index} />;
-          })
+          this.state.blocks.map((block, index) => <Block key={index} />)
         }
       </section>
     );

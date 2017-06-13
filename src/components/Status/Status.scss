@@ -1,0 +1,35 @@
+@import "../../styles/base";
+
+.component {
+  &_status {
+    top: 50px;
+    left: 50px;
+    position: fixed;
+    border: 5px solid $primary-color;
+    padding: 10px;
+
+    .status {
+      &_list {
+        &-item {
+          font-size: .85rem;
+          margin-bottom: 2rem;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+
+      &_item {
+        &-label {
+          font-weight: 800;
+        }
+
+        &-value {
+          font-size: 1.5rem;
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+}

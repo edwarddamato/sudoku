@@ -4,6 +4,42 @@ exports[`renders correctly 1`] = `
 <div
   className="root_container"
 >
+  <div
+    className="component_status"
+  >
+    <ul
+      className="status_list"
+    >
+      <li
+        className="status_list-item"
+      >
+        <div
+          className="status_item-label"
+        >
+          Current Block
+        </div>
+        <div
+          className="status_item-value"
+        >
+          0
+        </div>
+      </li>
+      <li
+        className="status_list-item"
+      >
+        <div
+          className="status_item-label"
+        >
+          Current Coords
+        </div>
+        <div
+          className="status_item-value"
+        >
+          0, 0
+        </div>
+      </li>
+    </ul>
+  </div>
   <section
     className="component_grid"
   >
@@ -15,7 +51,9 @@ exports[`renders correctly 1`] = `
       >
         <input
           className="game-cell_input"
-          type="number"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
         />
       </div>
       <div
@@ -23,7 +61,9 @@ exports[`renders correctly 1`] = `
       >
         <input
           className="game-cell_input"
-          type="number"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
         />
       </div>
       <div
@@ -31,7 +71,9 @@ exports[`renders correctly 1`] = `
       >
         <input
           className="game-cell_input"
-          type="number"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
         />
       </div>
       <div
@@ -39,7 +81,9 @@ exports[`renders correctly 1`] = `
       >
         <input
           className="game-cell_input"
-          type="number"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
         />
       </div>
       <div
@@ -47,7 +91,9 @@ exports[`renders correctly 1`] = `
       >
         <input
           className="game-cell_input"
-          type="number"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
         />
       </div>
       <div
@@ -55,7 +101,9 @@ exports[`renders correctly 1`] = `
       >
         <input
           className="game-cell_input"
-          type="number"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
         />
       </div>
       <div
@@ -63,7 +111,9 @@ exports[`renders correctly 1`] = `
       >
         <input
           className="game-cell_input"
-          type="number"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
         />
       </div>
       <div
@@ -71,7 +121,9 @@ exports[`renders correctly 1`] = `
       >
         <input
           className="game-cell_input"
-          type="number"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
         />
       </div>
       <div
@@ -79,83 +131,9 @@ exports[`renders correctly 1`] = `
       >
         <input
           className="game-cell_input"
-          type="number"
-        />
-      </div>
-    </div>
-    <div
-      className="component_game-block"
-    >
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          type="number"
-        />
-      </div>
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          type="number"
-        />
-      </div>
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          type="number"
-        />
-      </div>
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          type="number"
-        />
-      </div>
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          type="number"
-        />
-      </div>
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          type="number"
-        />
-      </div>
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          type="number"
-        />
-      </div>
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          type="number"
-        />
-      </div>
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          type="number"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
         />
       </div>
     </div>
@@ -167,7 +145,9 @@ exports[`renders correctly 1`] = `
       >
         <input
           className="game-cell_input"
-          type="number"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
         />
       </div>
       <div
@@ -175,7 +155,9 @@ exports[`renders correctly 1`] = `
       >
         <input
           className="game-cell_input"
-          type="number"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
         />
       </div>
       <div
@@ -183,7 +165,9 @@ exports[`renders correctly 1`] = `
       >
         <input
           className="game-cell_input"
-          type="number"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
         />
       </div>
       <div
@@ -191,7 +175,9 @@ exports[`renders correctly 1`] = `
       >
         <input
           className="game-cell_input"
-          type="number"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
         />
       </div>
       <div
@@ -199,7 +185,9 @@ exports[`renders correctly 1`] = `
       >
         <input
           className="game-cell_input"
-          type="number"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
         />
       </div>
       <div
@@ -207,7 +195,9 @@ exports[`renders correctly 1`] = `
       >
         <input
           className="game-cell_input"
-          type="number"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
         />
       </div>
       <div
@@ -215,7 +205,9 @@ exports[`renders correctly 1`] = `
       >
         <input
           className="game-cell_input"
-          type="number"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
         />
       </div>
       <div
@@ -223,7 +215,9 @@ exports[`renders correctly 1`] = `
       >
         <input
           className="game-cell_input"
-          type="number"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
         />
       </div>
       <div
@@ -231,83 +225,9 @@ exports[`renders correctly 1`] = `
       >
         <input
           className="game-cell_input"
-          type="number"
-        />
-      </div>
-    </div>
-    <div
-      className="component_game-block"
-    >
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          type="number"
-        />
-      </div>
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          type="number"
-        />
-      </div>
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          type="number"
-        />
-      </div>
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          type="number"
-        />
-      </div>
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          type="number"
-        />
-      </div>
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          type="number"
-        />
-      </div>
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          type="number"
-        />
-      </div>
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          type="number"
-        />
-      </div>
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          type="number"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
         />
       </div>
     </div>
@@ -319,7 +239,9 @@ exports[`renders correctly 1`] = `
       >
         <input
           className="game-cell_input"
-          type="number"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
         />
       </div>
       <div
@@ -327,7 +249,9 @@ exports[`renders correctly 1`] = `
       >
         <input
           className="game-cell_input"
-          type="number"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
         />
       </div>
       <div
@@ -335,7 +259,9 @@ exports[`renders correctly 1`] = `
       >
         <input
           className="game-cell_input"
-          type="number"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
         />
       </div>
       <div
@@ -343,7 +269,9 @@ exports[`renders correctly 1`] = `
       >
         <input
           className="game-cell_input"
-          type="number"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
         />
       </div>
       <div
@@ -351,7 +279,9 @@ exports[`renders correctly 1`] = `
       >
         <input
           className="game-cell_input"
-          type="number"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
         />
       </div>
       <div
@@ -359,7 +289,9 @@ exports[`renders correctly 1`] = `
       >
         <input
           className="game-cell_input"
-          type="number"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
         />
       </div>
       <div
@@ -367,7 +299,9 @@ exports[`renders correctly 1`] = `
       >
         <input
           className="game-cell_input"
-          type="number"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
         />
       </div>
       <div
@@ -375,7 +309,9 @@ exports[`renders correctly 1`] = `
       >
         <input
           className="game-cell_input"
-          type="number"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
         />
       </div>
       <div
@@ -383,83 +319,9 @@ exports[`renders correctly 1`] = `
       >
         <input
           className="game-cell_input"
-          type="number"
-        />
-      </div>
-    </div>
-    <div
-      className="component_game-block"
-    >
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          type="number"
-        />
-      </div>
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          type="number"
-        />
-      </div>
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          type="number"
-        />
-      </div>
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          type="number"
-        />
-      </div>
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          type="number"
-        />
-      </div>
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          type="number"
-        />
-      </div>
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          type="number"
-        />
-      </div>
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          type="number"
-        />
-      </div>
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          type="number"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
         />
       </div>
     </div>
@@ -471,7 +333,9 @@ exports[`renders correctly 1`] = `
       >
         <input
           className="game-cell_input"
-          type="number"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
         />
       </div>
       <div
@@ -479,7 +343,9 @@ exports[`renders correctly 1`] = `
       >
         <input
           className="game-cell_input"
-          type="number"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
         />
       </div>
       <div
@@ -487,7 +353,9 @@ exports[`renders correctly 1`] = `
       >
         <input
           className="game-cell_input"
-          type="number"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
         />
       </div>
       <div
@@ -495,7 +363,9 @@ exports[`renders correctly 1`] = `
       >
         <input
           className="game-cell_input"
-          type="number"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
         />
       </div>
       <div
@@ -503,7 +373,9 @@ exports[`renders correctly 1`] = `
       >
         <input
           className="game-cell_input"
-          type="number"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
         />
       </div>
       <div
@@ -511,7 +383,9 @@ exports[`renders correctly 1`] = `
       >
         <input
           className="game-cell_input"
-          type="number"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
         />
       </div>
       <div
@@ -519,7 +393,9 @@ exports[`renders correctly 1`] = `
       >
         <input
           className="game-cell_input"
-          type="number"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
         />
       </div>
       <div
@@ -527,7 +403,9 @@ exports[`renders correctly 1`] = `
       >
         <input
           className="game-cell_input"
-          type="number"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
         />
       </div>
       <div
@@ -535,83 +413,9 @@ exports[`renders correctly 1`] = `
       >
         <input
           className="game-cell_input"
-          type="number"
-        />
-      </div>
-    </div>
-    <div
-      className="component_game-block"
-    >
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          type="number"
-        />
-      </div>
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          type="number"
-        />
-      </div>
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          type="number"
-        />
-      </div>
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          type="number"
-        />
-      </div>
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          type="number"
-        />
-      </div>
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          type="number"
-        />
-      </div>
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          type="number"
-        />
-      </div>
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          type="number"
-        />
-      </div>
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          type="number"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
         />
       </div>
     </div>
@@ -623,7 +427,9 @@ exports[`renders correctly 1`] = `
       >
         <input
           className="game-cell_input"
-          type="number"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
         />
       </div>
       <div
@@ -631,7 +437,9 @@ exports[`renders correctly 1`] = `
       >
         <input
           className="game-cell_input"
-          type="number"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
         />
       </div>
       <div
@@ -639,7 +447,9 @@ exports[`renders correctly 1`] = `
       >
         <input
           className="game-cell_input"
-          type="number"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
         />
       </div>
       <div
@@ -647,7 +457,9 @@ exports[`renders correctly 1`] = `
       >
         <input
           className="game-cell_input"
-          type="number"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
         />
       </div>
       <div
@@ -655,7 +467,9 @@ exports[`renders correctly 1`] = `
       >
         <input
           className="game-cell_input"
-          type="number"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
         />
       </div>
       <div
@@ -663,7 +477,9 @@ exports[`renders correctly 1`] = `
       >
         <input
           className="game-cell_input"
-          type="number"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
         />
       </div>
       <div
@@ -671,7 +487,9 @@ exports[`renders correctly 1`] = `
       >
         <input
           className="game-cell_input"
-          type="number"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
         />
       </div>
       <div
@@ -679,7 +497,9 @@ exports[`renders correctly 1`] = `
       >
         <input
           className="game-cell_input"
-          type="number"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
         />
       </div>
       <div
@@ -687,7 +507,385 @@ exports[`renders correctly 1`] = `
       >
         <input
           className="game-cell_input"
-          type="number"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
+        />
+      </div>
+    </div>
+    <div
+      className="component_game-block"
+    >
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
+        />
+      </div>
+    </div>
+    <div
+      className="component_game-block"
+    >
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
+        />
+      </div>
+    </div>
+    <div
+      className="component_game-block"
+    >
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
+        />
+      </div>
+    </div>
+    <div
+      className="component_game-block"
+    >
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onMouseEnter={[Function]}
+          type="text"
         />
       </div>
     </div>
