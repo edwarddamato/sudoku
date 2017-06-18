@@ -19,7 +19,7 @@ export class Block extends React.Component<IBlockProps, IBlockState> {
 
   componentDidMount () {
     let cells = new Array<any>();
-    for (let count = 0; count < 9; count++) cells.push({});
+    for (let count = 0; count < 9; count++) cells.push({ count });
     this.setState({ cells });
   }
 
@@ -28,7 +28,7 @@ export class Block extends React.Component<IBlockProps, IBlockState> {
       <div className="component_game-block">
         {
           this.state.cells.map((cell, index) => {
-            return <Cell key={index} />;
+            return <Cell count={cell.count} key={index} />;
           })
         }
       </div>

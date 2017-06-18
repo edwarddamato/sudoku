@@ -1,7 +1,9 @@
 import * as React from 'react';
+import { Store } from '../../store';
+import { CellHoverAction } from '../../store/actions';
 import './Cell.scss';
 
-export interface ICellProps { }
+export interface ICellProps { count: number }
 export interface ICellState { }
 
 export class Cell extends React.Component<ICellProps, ICellState> {
@@ -11,17 +13,17 @@ export class Cell extends React.Component<ICellProps, ICellState> {
     this.state = {
     };
 
-    this.handleMouseEnter = this.handleMouseEnter.bind(this);
+    this.handleMouseMove = this.handleMouseMove.bind(this);
   }
 
-  handleMouseEnter(e: React.MouseEvent<HTMLInputElement>): void {
-    console.log(e);
+  handleMouseMove(e: React.MouseEvent<HTMLInputElement>): void {
+    Store.Dispatch(CellHoverAction, e.type === 'mouseleave' ? -1 : this.props.count);
   }
 
   render () {
     return (
       <div className="component_game-cell">
-        <input onMouseEnter={this.handleMouseEnter} className="game-cell_input" maxLength={1} type="text" />
+        <input onMouseLeave={this.handleMouseMove} onMouseEnter={this.handleMouseMove} className="game-cell_input" maxLength={1} type="text" />
       </div>
     );
   }

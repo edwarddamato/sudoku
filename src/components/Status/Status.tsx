@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Store } from '../../store';
 import './Status.scss';
 
 type StateValue = number | Array<number>;
@@ -10,12 +11,17 @@ interface IStatusProps { }
 interface IStatusState {
   readonly currentBlock: IState;
   readonly currentCoords: IState;
+  readonly currentCellIndex: IState;
   [key: string]: IState;
 }
 
 export class Status extends React.Component<IStatusProps, IStatusState> {
   constructor(props: undefined) {
     super(props);
+
+    Store.Subscribe(() => {
+      this.setState({ currentCellIndex: { ...this.state.currentCellIndex, value: Store.GetCellHoverIndex() } });
+    });
 
     this.state = {
       currentBlock: {
@@ -25,6 +31,10 @@ export class Status extends React.Component<IStatusProps, IStatusState> {
       currentCoords: {
         name: 'Current Coords',
         value: [0, 0]
+      },
+      currentCellIndex: {
+        name: 'Current Cell Index',
+        value: -1
       }
     };
   }
