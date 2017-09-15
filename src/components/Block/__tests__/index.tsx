@@ -4,7 +4,7 @@ import { create } from 'react-test-renderer';
 
 it('renders correctly', () => {
   const block = create(
-    <Block />
+    <Block index={4} />
   ).toJSON();
   expect(block).toMatchSnapshot();
 });

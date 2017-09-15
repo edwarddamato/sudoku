@@ -4,7 +4,7 @@ import { create } from 'react-test-renderer';
 
 it('renders correctly', () => {
   const grid = create(
-    <Grid />
+    <Grid blocks={[]} />
   ).toJSON();
   expect(grid).toMatchSnapshot();
 });

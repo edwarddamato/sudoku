@@ -1,36 +1,34 @@
 import * as React from 'react';
+import * as R from 'ramda';
+import { Cell } from '../Cell/';
+import { CellElement } from '../../types'
 import './Block.scss';
-import { Cell } from '../Cell/index';
 
-interface IBlockProps { }
-interface IBlockState {
-  readonly cells: Array<any>
+interface Props {
+  index: number;
 }
 
-export class Block extends React.Component<IBlockProps, IBlockState> {
+interface State {
+  cells: Array<CellElement>;
+}
+
+export class Block extends React.Component<Props, State> {
   constructor(props: undefined) {
     super(props);
 
     this.state = {
-      cells: []
+      cells: R.times<CellElement>(this.createCellElement.bind(this), 9)
     };
   }
 
-
-  componentDidMount () {
-    let cells = new Array<any>();
-    for (let count = 0; count < 9; count++) cells.push({ count });
-    this.setState({ cells });
+  private createCellElement(index: number): CellElement {
+    return <Cell key={index} blockIndex={this.props.index} index={index} />;
   }
 
   render () {
     return (
       <div className="component_game-block">
-        {
-          this.state.cells.map((cell, index) => {
-            return <Cell count={cell.count} key={index} />;
-          })
-        }
+        { this.state.cells }
       </div>
     );
   }

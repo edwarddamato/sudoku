@@ -1,32 +1,55 @@
 import * as React from 'react';
+import * as R from 'ramda';
 import { Store } from '../../store';
 import './Status.scss';
 
 type StateValue = number | Array<number>;
+
 interface IState {
-  readonly name: string;
-  readonly value: StateValue;
+  name: string;
+  value: StateValue;
 }
-interface IStatusProps { }
-interface IStatusState {
-  readonly currentBlock: IState;
-  readonly currentCoords: IState;
-  readonly currentCellIndex: IState;
+
+interface State {
+  currentBlock: IState;
+  currentCoords: IState;
+  currentCellIndex: IState;
   [key: string]: IState;
 }
 
-export class Status extends React.Component<IStatusProps, IStatusState> {
+const showStateValue = (value: StateValue) => {
+  return typeof value === "number" ? value : value.join(', ')
+}
+
+const getStatusItemFromStateKey = (state: State) => (key: string) => {
+  return (<li key={key} className="status_list-item">
+    <div className="status_item-label">{state[key].name}</div>
+    <div className="status_item-value">{
+      showStateValue(state[key].value)
+    }</div>
+  </li>);
+}
+
+const buildStatusFromState = (state: State) => {
+  const statusItemFromStateKey = getStatusItemFromStateKey(state);
+  return R.compose(R.map(statusItemFromStateKey), R.keys)(state);
+};
+
+export class Status extends React.Component<any, State> {
   constructor(props: undefined) {
     super(props);
 
     Store.Subscribe(() => {
-      this.setState({ currentCellIndex: { ...this.state.currentCellIndex, value: Store.GetCellHoverIndex() } });
+      this.setState({
+        currentCellIndex: { ...this.state.currentCellIndex, value: Store.GetCellHoverIndex().cell },
+        currentBlock: { ...this.state.currentBlock, value: Store.GetCellHoverIndex().block },
+      });
     });
 
     this.state = {
       currentBlock: {
         name: 'Current Block',
-        value: 0
+        value: -1
       },
       currentCoords: {
         name: 'Current Coords',
@@ -39,28 +62,12 @@ export class Status extends React.Component<IStatusProps, IStatusState> {
     };
   }
 
-  componentDidMount () {
-  }
-
-  showStateValue (value: StateValue) {
-    return typeof value === "number" ? value : value.join(', ')
-  }
-
-  getStatusItemFromStateKey (state: IStatusState, key: string) {
-    return (<li key={key} className="status_list-item">
-      <div className="status_item-label">{state[key].name}</div>
-      <div className="status_item-value">{
-        this.showStateValue(state[key].value)
-      }</div>
-    </li>);
-  }
-
   render () {
     return (
       <div className="component_status">
         <ul className="status_list">
           {
-            Object.keys(this.state).map(key => this.getStatusItemFromStateKey(this.state, key))
+            buildStatusFromState(this.state)
           }
         </ul>
       </div>

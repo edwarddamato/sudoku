@@ -1,34 +1,30 @@
 import * as React from 'react';
 import './Grid.scss';
 import { Block } from '../Block/index';
+import { BlockElement } from '../../types';
+import * as R from 'ramda';
 
-interface IGridProps { }
-interface IGridState {
-  readonly blocks: Array<any>
+interface State {
+  blocks: Array<BlockElement>;
 }
 
-
-export class Grid extends React.Component<IGridProps, IGridState> {
+export class Grid extends React.Component<any, State> {
   constructor(props: undefined) {
     super(props);
 
     this.state = {
-      blocks: []
+      blocks: R.times<BlockElement>(this.createBlockElement.bind(this), 9)
     };
   }
   
-  componentDidMount () {
-    let blocks = new Array<any>();
-    for (let count = 0; count < 9; count++) blocks.push({});
-    this.setState({ blocks });
+  private createBlockElement(index: number): BlockElement {
+    return <Block key={index} index={index} />;
   }
 
   render () {
     return (
       <section className="component_grid">
-        {
-          this.state.blocks.map((block, index) => <Block key={index} />)
-        }
+        { this.state.blocks }
       </section>
     );
   }

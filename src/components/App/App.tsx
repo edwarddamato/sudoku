@@ -1,24 +1,12 @@
 import * as React from 'react';
-import { Grid } from '../Grid/index';
-import { Status } from '../Status/index';
+import { Status } from '../Status/';
+import { Grid } from '../Grid/';
+import { Block } from '../Block';
+import { Cell } from '../Cell';
+import { BlockElement, CellElement } from '../../types';
 import './App.scss';
 
-interface IAppState {
-  readonly user?: string
-}
-
-export class App extends React.Component<undefined, IAppState> {
-  constructor (props: undefined) {
-    super(props);
-
-    this.state = {
-      user: undefined
-    };
-  }
-
-  componentDidMount () {
-  }
-
+export class App extends React.Component<any, any> {
   render () {
     return (
       <div className="root_container">

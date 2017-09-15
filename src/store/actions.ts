@@ -1,7 +1,5 @@
-import { IAction } from './interfaces.d';
+import { IAction } from './types';
 
 export const CellHoverAction: IAction = {
   stateKey: "currentCell"
 }
-
-export type Action = IAction;
