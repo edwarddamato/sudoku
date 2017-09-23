@@ -13,12 +13,26 @@ exports[`renders correctly 1`] = `
       <div
         className="status_item-label"
       >
+        Current Cell Index
+      </div>
+      <div
+        className="status_item-value"
+      >
+        -1
+      </div>
+    </li>
+    <li
+      className="status_list-item"
+    >
+      <div
+        className="status_item-label"
+      >
         Current Block
       </div>
       <div
         className="status_item-value"
       >
-        0
+        -1
       </div>
     </li>
     <li
@@ -32,7 +46,7 @@ exports[`renders correctly 1`] = `
       <div
         className="status_item-value"
       >
-        0, 0
+        -1, -1
       </div>
     </li>
   </ul>

@@ -7,7 +7,8 @@ exports[`renders correctly 1`] = `
   <input
     className="game-cell_input"
     maxLength={1}
-    onMouseEnter={[Function]}
+    onBlur={[Function]}
+    onFocus={[Function]}
     type="text"
   />
 </div>

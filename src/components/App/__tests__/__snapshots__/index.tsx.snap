@@ -16,12 +16,26 @@ exports[`renders correctly 1`] = `
         <div
           className="status_item-label"
         >
+          Current Cell Index
+        </div>
+        <div
+          className="status_item-value"
+        >
+          -1
+        </div>
+      </li>
+      <li
+        className="status_list-item"
+      >
+        <div
+          className="status_item-label"
+        >
           Current Block
         </div>
         <div
           className="status_item-value"
         >
-          0
+          -1
         </div>
       </li>
       <li
@@ -35,7 +49,7 @@ exports[`renders correctly 1`] = `
         <div
           className="status_item-value"
         >
-          0, 0
+          -1, -1
         </div>
       </li>
     </ul>
@@ -52,7 +66,8 @@ exports[`renders correctly 1`] = `
         <input
           className="game-cell_input"
           maxLength={1}
-          onMouseEnter={[Function]}
+          onBlur={[Function]}
+          onFocus={[Function]}
           type="text"
         />
       </div>
@@ -62,7 +77,8 @@ exports[`renders correctly 1`] = `
         <input
           className="game-cell_input"
           maxLength={1}
-          onMouseEnter={[Function]}
+          onBlur={[Function]}
+          onFocus={[Function]}
           type="text"
         />
       </div>
@@ -72,7 +88,8 @@ exports[`renders correctly 1`] = `
         <input
           className="game-cell_input"
           maxLength={1}
-          onMouseEnter={[Function]}
+          onBlur={[Function]}
+          onFocus={[Function]}
           type="text"
         />
       </div>
@@ -82,7 +99,8 @@ exports[`renders correctly 1`] = `
         <input
           className="game-cell_input"
           maxLength={1}
-          onMouseEnter={[Function]}
+          onBlur={[Function]}
+          onFocus={[Function]}
           type="text"
         />
       </div>
@@ -92,7 +110,8 @@ exports[`renders correctly 1`] = `
         <input
           className="game-cell_input"
           maxLength={1}
-          onMouseEnter={[Function]}
+          onBlur={[Function]}
+          onFocus={[Function]}
           type="text"
         />
       </div>
@@ -102,7 +121,8 @@ exports[`renders correctly 1`] = `
         <input
           className="game-cell_input"
           maxLength={1}
-          onMouseEnter={[Function]}
+          onBlur={[Function]}
+          onFocus={[Function]}
           type="text"
         />
       </div>
@@ -112,7 +132,8 @@ exports[`renders correctly 1`] = `
         <input
           className="game-cell_input"
           maxLength={1}
-          onMouseEnter={[Function]}
+          onBlur={[Function]}
+          onFocus={[Function]}
           type="text"
         />
       </div>
@@ -122,7 +143,8 @@ exports[`renders correctly 1`] = `
         <input
           className="game-cell_input"
           maxLength={1}
-          onMouseEnter={[Function]}
+          onBlur={[Function]}
+          onFocus={[Function]}
           type="text"
         />
       </div>
@@ -132,101 +154,8 @@ exports[`renders correctly 1`] = `
         <input
           className="game-cell_input"
           maxLength={1}
-          onMouseEnter={[Function]}
-          type="text"
-        />
-      </div>
-    </div>
-    <div
-      className="component_game-block"
-    >
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          maxLength={1}
-          onMouseEnter={[Function]}
-          type="text"
-        />
-      </div>
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          maxLength={1}
-          onMouseEnter={[Function]}
-          type="text"
-        />
-      </div>
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          maxLength={1}
-          onMouseEnter={[Function]}
-          type="text"
-        />
-      </div>
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          maxLength={1}
-          onMouseEnter={[Function]}
-          type="text"
-        />
-      </div>
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          maxLength={1}
-          onMouseEnter={[Function]}
-          type="text"
-        />
-      </div>
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          maxLength={1}
-          onMouseEnter={[Function]}
-          type="text"
-        />
-      </div>
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          maxLength={1}
-          onMouseEnter={[Function]}
-          type="text"
-        />
-      </div>
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          maxLength={1}
-          onMouseEnter={[Function]}
-          type="text"
-        />
-      </div>
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          maxLength={1}
-          onMouseEnter={[Function]}
+          onBlur={[Function]}
+          onFocus={[Function]}
           type="text"
         />
       </div>
@@ -240,7 +169,8 @@ exports[`renders correctly 1`] = `
         <input
           className="game-cell_input"
           maxLength={1}
-          onMouseEnter={[Function]}
+          onBlur={[Function]}
+          onFocus={[Function]}
           type="text"
         />
       </div>
@@ -250,7 +180,8 @@ exports[`renders correctly 1`] = `
         <input
           className="game-cell_input"
           maxLength={1}
-          onMouseEnter={[Function]}
+          onBlur={[Function]}
+          onFocus={[Function]}
           type="text"
         />
       </div>
@@ -260,7 +191,8 @@ exports[`renders correctly 1`] = `
         <input
           className="game-cell_input"
           maxLength={1}
-          onMouseEnter={[Function]}
+          onBlur={[Function]}
+          onFocus={[Function]}
           type="text"
         />
       </div>
@@ -270,7 +202,8 @@ exports[`renders correctly 1`] = `
         <input
           className="game-cell_input"
           maxLength={1}
-          onMouseEnter={[Function]}
+          onBlur={[Function]}
+          onFocus={[Function]}
           type="text"
         />
       </div>
@@ -280,7 +213,8 @@ exports[`renders correctly 1`] = `
         <input
           className="game-cell_input"
           maxLength={1}
-          onMouseEnter={[Function]}
+          onBlur={[Function]}
+          onFocus={[Function]}
           type="text"
         />
       </div>
@@ -290,7 +224,8 @@ exports[`renders correctly 1`] = `
         <input
           className="game-cell_input"
           maxLength={1}
-          onMouseEnter={[Function]}
+          onBlur={[Function]}
+          onFocus={[Function]}
           type="text"
         />
       </div>
@@ -300,7 +235,8 @@ exports[`renders correctly 1`] = `
         <input
           className="game-cell_input"
           maxLength={1}
-          onMouseEnter={[Function]}
+          onBlur={[Function]}
+          onFocus={[Function]}
           type="text"
         />
       </div>
@@ -310,7 +246,8 @@ exports[`renders correctly 1`] = `
         <input
           className="game-cell_input"
           maxLength={1}
-          onMouseEnter={[Function]}
+          onBlur={[Function]}
+          onFocus={[Function]}
           type="text"
         />
       </div>
@@ -320,101 +257,8 @@ exports[`renders correctly 1`] = `
         <input
           className="game-cell_input"
           maxLength={1}
-          onMouseEnter={[Function]}
-          type="text"
-        />
-      </div>
-    </div>
-    <div
-      className="component_game-block"
-    >
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          maxLength={1}
-          onMouseEnter={[Function]}
-          type="text"
-        />
-      </div>
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          maxLength={1}
-          onMouseEnter={[Function]}
-          type="text"
-        />
-      </div>
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          maxLength={1}
-          onMouseEnter={[Function]}
-          type="text"
-        />
-      </div>
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          maxLength={1}
-          onMouseEnter={[Function]}
-          type="text"
-        />
-      </div>
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          maxLength={1}
-          onMouseEnter={[Function]}
-          type="text"
-        />
-      </div>
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          maxLength={1}
-          onMouseEnter={[Function]}
-          type="text"
-        />
-      </div>
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          maxLength={1}
-          onMouseEnter={[Function]}
-          type="text"
-        />
-      </div>
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          maxLength={1}
-          onMouseEnter={[Function]}
-          type="text"
-        />
-      </div>
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          maxLength={1}
-          onMouseEnter={[Function]}
+          onBlur={[Function]}
+          onFocus={[Function]}
           type="text"
         />
       </div>
@@ -428,7 +272,8 @@ exports[`renders correctly 1`] = `
         <input
           className="game-cell_input"
           maxLength={1}
-          onMouseEnter={[Function]}
+          onBlur={[Function]}
+          onFocus={[Function]}
           type="text"
         />
       </div>
@@ -438,7 +283,8 @@ exports[`renders correctly 1`] = `
         <input
           className="game-cell_input"
           maxLength={1}
-          onMouseEnter={[Function]}
+          onBlur={[Function]}
+          onFocus={[Function]}
           type="text"
         />
       </div>
@@ -448,7 +294,8 @@ exports[`renders correctly 1`] = `
         <input
           className="game-cell_input"
           maxLength={1}
-          onMouseEnter={[Function]}
+          onBlur={[Function]}
+          onFocus={[Function]}
           type="text"
         />
       </div>
@@ -458,7 +305,8 @@ exports[`renders correctly 1`] = `
         <input
           className="game-cell_input"
           maxLength={1}
-          onMouseEnter={[Function]}
+          onBlur={[Function]}
+          onFocus={[Function]}
           type="text"
         />
       </div>
@@ -468,7 +316,8 @@ exports[`renders correctly 1`] = `
         <input
           className="game-cell_input"
           maxLength={1}
-          onMouseEnter={[Function]}
+          onBlur={[Function]}
+          onFocus={[Function]}
           type="text"
         />
       </div>
@@ -478,7 +327,8 @@ exports[`renders correctly 1`] = `
         <input
           className="game-cell_input"
           maxLength={1}
-          onMouseEnter={[Function]}
+          onBlur={[Function]}
+          onFocus={[Function]}
           type="text"
         />
       </div>
@@ -488,7 +338,8 @@ exports[`renders correctly 1`] = `
         <input
           className="game-cell_input"
           maxLength={1}
-          onMouseEnter={[Function]}
+          onBlur={[Function]}
+          onFocus={[Function]}
           type="text"
         />
       </div>
@@ -498,7 +349,8 @@ exports[`renders correctly 1`] = `
         <input
           className="game-cell_input"
           maxLength={1}
-          onMouseEnter={[Function]}
+          onBlur={[Function]}
+          onFocus={[Function]}
           type="text"
         />
       </div>
@@ -508,101 +360,8 @@ exports[`renders correctly 1`] = `
         <input
           className="game-cell_input"
           maxLength={1}
-          onMouseEnter={[Function]}
-          type="text"
-        />
-      </div>
-    </div>
-    <div
-      className="component_game-block"
-    >
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          maxLength={1}
-          onMouseEnter={[Function]}
-          type="text"
-        />
-      </div>
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          maxLength={1}
-          onMouseEnter={[Function]}
-          type="text"
-        />
-      </div>
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          maxLength={1}
-          onMouseEnter={[Function]}
-          type="text"
-        />
-      </div>
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          maxLength={1}
-          onMouseEnter={[Function]}
-          type="text"
-        />
-      </div>
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          maxLength={1}
-          onMouseEnter={[Function]}
-          type="text"
-        />
-      </div>
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          maxLength={1}
-          onMouseEnter={[Function]}
-          type="text"
-        />
-      </div>
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          maxLength={1}
-          onMouseEnter={[Function]}
-          type="text"
-        />
-      </div>
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          maxLength={1}
-          onMouseEnter={[Function]}
-          type="text"
-        />
-      </div>
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          maxLength={1}
-          onMouseEnter={[Function]}
+          onBlur={[Function]}
+          onFocus={[Function]}
           type="text"
         />
       </div>
@@ -616,7 +375,8 @@ exports[`renders correctly 1`] = `
         <input
           className="game-cell_input"
           maxLength={1}
-          onMouseEnter={[Function]}
+          onBlur={[Function]}
+          onFocus={[Function]}
           type="text"
         />
       </div>
@@ -626,7 +386,8 @@ exports[`renders correctly 1`] = `
         <input
           className="game-cell_input"
           maxLength={1}
-          onMouseEnter={[Function]}
+          onBlur={[Function]}
+          onFocus={[Function]}
           type="text"
         />
       </div>
@@ -636,7 +397,8 @@ exports[`renders correctly 1`] = `
         <input
           className="game-cell_input"
           maxLength={1}
-          onMouseEnter={[Function]}
+          onBlur={[Function]}
+          onFocus={[Function]}
           type="text"
         />
       </div>
@@ -646,7 +408,8 @@ exports[`renders correctly 1`] = `
         <input
           className="game-cell_input"
           maxLength={1}
-          onMouseEnter={[Function]}
+          onBlur={[Function]}
+          onFocus={[Function]}
           type="text"
         />
       </div>
@@ -656,7 +419,8 @@ exports[`renders correctly 1`] = `
         <input
           className="game-cell_input"
           maxLength={1}
-          onMouseEnter={[Function]}
+          onBlur={[Function]}
+          onFocus={[Function]}
           type="text"
         />
       </div>
@@ -666,7 +430,8 @@ exports[`renders correctly 1`] = `
         <input
           className="game-cell_input"
           maxLength={1}
-          onMouseEnter={[Function]}
+          onBlur={[Function]}
+          onFocus={[Function]}
           type="text"
         />
       </div>
@@ -676,7 +441,8 @@ exports[`renders correctly 1`] = `
         <input
           className="game-cell_input"
           maxLength={1}
-          onMouseEnter={[Function]}
+          onBlur={[Function]}
+          onFocus={[Function]}
           type="text"
         />
       </div>
@@ -686,7 +452,8 @@ exports[`renders correctly 1`] = `
         <input
           className="game-cell_input"
           maxLength={1}
-          onMouseEnter={[Function]}
+          onBlur={[Function]}
+          onFocus={[Function]}
           type="text"
         />
       </div>
@@ -696,101 +463,8 @@ exports[`renders correctly 1`] = `
         <input
           className="game-cell_input"
           maxLength={1}
-          onMouseEnter={[Function]}
-          type="text"
-        />
-      </div>
-    </div>
-    <div
-      className="component_game-block"
-    >
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          maxLength={1}
-          onMouseEnter={[Function]}
-          type="text"
-        />
-      </div>
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          maxLength={1}
-          onMouseEnter={[Function]}
-          type="text"
-        />
-      </div>
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          maxLength={1}
-          onMouseEnter={[Function]}
-          type="text"
-        />
-      </div>
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          maxLength={1}
-          onMouseEnter={[Function]}
-          type="text"
-        />
-      </div>
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          maxLength={1}
-          onMouseEnter={[Function]}
-          type="text"
-        />
-      </div>
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          maxLength={1}
-          onMouseEnter={[Function]}
-          type="text"
-        />
-      </div>
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          maxLength={1}
-          onMouseEnter={[Function]}
-          type="text"
-        />
-      </div>
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          maxLength={1}
-          onMouseEnter={[Function]}
-          type="text"
-        />
-      </div>
-      <div
-        className="component_game-cell"
-      >
-        <input
-          className="game-cell_input"
-          maxLength={1}
-          onMouseEnter={[Function]}
+          onBlur={[Function]}
+          onFocus={[Function]}
           type="text"
         />
       </div>
@@ -804,7 +478,8 @@ exports[`renders correctly 1`] = `
         <input
           className="game-cell_input"
           maxLength={1}
-          onMouseEnter={[Function]}
+          onBlur={[Function]}
+          onFocus={[Function]}
           type="text"
         />
       </div>
@@ -814,7 +489,8 @@ exports[`renders correctly 1`] = `
         <input
           className="game-cell_input"
           maxLength={1}
-          onMouseEnter={[Function]}
+          onBlur={[Function]}
+          onFocus={[Function]}
           type="text"
         />
       </div>
@@ -824,7 +500,8 @@ exports[`renders correctly 1`] = `
         <input
           className="game-cell_input"
           maxLength={1}
-          onMouseEnter={[Function]}
+          onBlur={[Function]}
+          onFocus={[Function]}
           type="text"
         />
       </div>
@@ -834,7 +511,8 @@ exports[`renders correctly 1`] = `
         <input
           className="game-cell_input"
           maxLength={1}
-          onMouseEnter={[Function]}
+          onBlur={[Function]}
+          onFocus={[Function]}
           type="text"
         />
       </div>
@@ -844,7 +522,8 @@ exports[`renders correctly 1`] = `
         <input
           className="game-cell_input"
           maxLength={1}
-          onMouseEnter={[Function]}
+          onBlur={[Function]}
+          onFocus={[Function]}
           type="text"
         />
       </div>
@@ -854,7 +533,8 @@ exports[`renders correctly 1`] = `
         <input
           className="game-cell_input"
           maxLength={1}
-          onMouseEnter={[Function]}
+          onBlur={[Function]}
+          onFocus={[Function]}
           type="text"
         />
       </div>
@@ -864,7 +544,8 @@ exports[`renders correctly 1`] = `
         <input
           className="game-cell_input"
           maxLength={1}
-          onMouseEnter={[Function]}
+          onBlur={[Function]}
+          onFocus={[Function]}
           type="text"
         />
       </div>
@@ -874,7 +555,8 @@ exports[`renders correctly 1`] = `
         <input
           className="game-cell_input"
           maxLength={1}
-          onMouseEnter={[Function]}
+          onBlur={[Function]}
+          onFocus={[Function]}
           type="text"
         />
       </div>
@@ -884,7 +566,420 @@ exports[`renders correctly 1`] = `
         <input
           className="game-cell_input"
           maxLength={1}
-          onMouseEnter={[Function]}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          type="text"
+        />
+      </div>
+    </div>
+    <div
+      className="component_game-block"
+    >
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          type="text"
+        />
+      </div>
+    </div>
+    <div
+      className="component_game-block"
+    >
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          type="text"
+        />
+      </div>
+    </div>
+    <div
+      className="component_game-block"
+    >
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          type="text"
+        />
+      </div>
+    </div>
+    <div
+      className="component_game-block"
+    >
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="component_game-cell"
+      >
+        <input
+          className="game-cell_input"
+          maxLength={1}
+          onBlur={[Function]}
+          onFocus={[Function]}
           type="text"
         />
       </div>
