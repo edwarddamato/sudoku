@@ -11,9 +11,9 @@ interface IState {
 }
 
 interface State {
+  currentCellIndex: IState;
   currentBlock: IState;
   currentCoords: IState;
-  currentCellIndex: IState;
   [key: string]: IState;
 }
 
@@ -41,13 +41,17 @@ export class Status extends React.Component<any, State> {
 
     Store.Subscribe(() => {
       this.setState({
+        currentCoords: { ...this.state.currentCoords, value: Store.GetCellHoverIndex().coords },
         currentCellIndex: { ...this.state.currentCellIndex, value: Store.GetCellHoverIndex().cell },
         currentBlock: { ...this.state.currentBlock, value: Store.GetCellHoverIndex().block },
-        currentCoords: { ...this.state.currentCoords, value: Store.GetCellHoverIndex().coords },
       });
     });
 
     this.state = {
+      currentCellIndex: {
+        name: 'Current Cell Index',
+        value: -1
+      },
       currentBlock: {
         name: 'Current Block',
         value: -1
@@ -55,10 +59,6 @@ export class Status extends React.Component<any, State> {
       currentCoords: {
         name: 'Current Coords',
         value: [-1, -1]
-      },
-      currentCellIndex: {
-        name: 'Current Cell Index',
-        value: -1
       }
     };
   }
