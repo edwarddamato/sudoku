@@ -16,7 +16,7 @@ const reducer = (state: any, action: IDispatchAction) => {
 };
 
 const store = createStore(reducer, {
-  [CellHoverAction.stateKey]: { block: -1, cell: -1 }
+  [CellHoverAction.stateKey]: { block: -1, cell: -1, coords: [-1, -1] }
 });
 
 export class Store {

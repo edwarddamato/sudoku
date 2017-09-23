@@ -43,6 +43,7 @@ export class Status extends React.Component<any, State> {
       this.setState({
         currentCellIndex: { ...this.state.currentCellIndex, value: Store.GetCellHoverIndex().cell },
         currentBlock: { ...this.state.currentBlock, value: Store.GetCellHoverIndex().block },
+        currentCoords: { ...this.state.currentCoords, value: Store.GetCellHoverIndex().coords },
       });
     });
 
@@ -53,7 +54,7 @@ export class Status extends React.Component<any, State> {
       },
       currentCoords: {
         name: 'Current Coords',
-        value: [0, 0]
+        value: [-1, -1]
       },
       currentCellIndex: {
         name: 'Current Cell Index',
