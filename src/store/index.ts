@@ -1,17 +1,18 @@
+import * as R from 'ramda';
 import { IAction, IDispatchAction } from './types';
 import { CellHoverAction } from './actions';
 import { IStatusData } from '../types';
 import { createStore } from 'redux';
 
-const execute = (action: IDispatchAction, op: (StoreKey: any) => any): (StoreKey: any) => any => {
+const op = (state: {}) => (partialState: {}) => R.merge(state, partialState);
+
+const execute = (action: IDispatchAction, getPartialState: (StoreKey: any) => any): (StoreKey: any) => any => {
   const partialState = { [action.type.stateKey]: action.data };
-  return op(partialState);
+  return getPartialState(partialState);
 };
 
-const reducer = (state: any, action: IDispatchAction) => {
-  const newState = execute(action, partialState => {
-    return Object.assign({}, state, partialState);
-  });
+const reducer = (state: {}, action: IDispatchAction) => {
+  const newState = execute(action, op(state));
   return newState || state;
 };
 

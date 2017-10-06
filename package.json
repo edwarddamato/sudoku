@@ -4,7 +4,8 @@
   "description": "Sudoku in React and TypeScript.",
   "scripts": {
     "start": "webpack-dev-server",
-    "test": "jest --verbose --no-cache"
+    "test": "jest --verbose --no-cache",
+    "coverage": "npm run test -- --coverage"
   },
   "main": "index.js",
   "repository": "git@github.com:edwarddamato/sudoku.git",
