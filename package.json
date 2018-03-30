@@ -6,7 +6,7 @@
     "start": "webpack-dev-server",
     "build": "webpack",
     "test": "jest --verbose --no-cache",
-    "coverage": "npm run test --coverage",
+    "coverage": "yarn test --coverage",
     "format": "prettier '{src/**/,./}*.{ts,tsx,js}' --write"
   },
   "main": "index.js",
