@@ -6,8 +6,8 @@ import { Cell } from '../Cell';
 import { BlockElement, CellElement } from '../../types';
 import './App.scss';
 
-export class App extends React.Component<any, any> {
-  render () {
+export class App extends React.PureComponent<{}, {}> {
+  public render() {
     return (
       <div className="root_container">
         <Status />

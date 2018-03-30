@@ -13,15 +13,11 @@ module.exports = {
   entry: './src/index.tsx',
   output: {
     filename: 'bundle.js',
+    path: __dirname + '/dist'
   },
-  devtool: "source-map",
+  devtool: 'source-map',
   resolve: {
-    extensions: [
-      '.tsx',
-      '.ts',
-      '.js',
-      '.json',
-    ]
+    extensions: ['.tsx', '.ts', '.js', '.json']
   },
   module: {
     loaders: [
@@ -29,7 +25,8 @@ module.exports = {
       { test: /\.tsx?$/, loader: 'awesome-typescript-loader', include: [SOURCE] },
       { test: /\.js$/, loader: 'babel-loader', include: [SOURCE] },
       { test: /\.jsx$/, loader: 'babel-loader', include: [SOURCE] },
-      { test: /\.scss$/,
+      {
+        test: /\.scss$/,
         loader: ExtractTextPlugin.extract({
           fallback: 'style-loader',
           use: 'css-loader!postcss-loader!sass-loader'
@@ -37,10 +34,11 @@ module.exports = {
       }
     ]
   },
-  plugins: [HtmlWebpackPluginConfig,
+  plugins: [
+    HtmlWebpackPluginConfig,
     new ExtractTextPlugin({
       filename: '[name].css',
       allChunks: true
-    })]
+    })
+  ]
 };
-

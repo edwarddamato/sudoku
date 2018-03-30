@@ -3,8 +3,6 @@ import { Status } from '../index';
 import { create } from 'react-test-renderer';
 
 it('renders correctly', () => {
-  const status = create(
-    <Status />
-  ).toJSON();
+  const status = create(<Status />).toJSON();
   expect(status).toMatchSnapshot();
 });

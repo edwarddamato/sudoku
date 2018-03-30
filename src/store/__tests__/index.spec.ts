@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { ActionStateKey } from '../types';
 import { Store } from '../';
 
 describe('Store', () => {
@@ -7,17 +8,19 @@ describe('Store', () => {
       //
     });
   });
-  
+
   describe('GetState', () => {
     it('should return all store state when no action is supplied', () => {
-      expect(Store.GetState()).toEqual(expect.objectContaining({
-        currentCell: {
+      expect(Store.GetState()).toEqual({
+        [ActionStateKey.CURRENT_CELL]: {
           block: -1,
           cell: -1,
           coords: [-1, -1]
-          //TODO: Check for exact state match
+        },
+        [ActionStateKey.GRID_VALUES]: {
+          foo: ''
         }
-      }));
+      });
     });
   });
 

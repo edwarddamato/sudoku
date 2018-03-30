@@ -1,46 +1,74 @@
 import * as R from 'ramda';
-import { IAction, IDispatchAction } from './types';
-import { CellHoverAction } from './actions';
-import { IStatusData } from '../types';
+import {
+  IAction,
+  ActionStateKey,
+  CellHoverAction,
+  GridValuesAction,
+  ICellHoverActionData,
+  IGridValuesActionData,
+  IDispatchAction
+} from './types';
 import { createStore } from 'redux';
 
-const op = (state: {}) => (partialState: {}) => R.merge(state, partialState);
+interface IAppState {
+  readonly [ActionStateKey.CURRENT_CELL]: ICellHoverActionData;
+  readonly [ActionStateKey.GRID_VALUES]: IGridValuesActionData;
+}
 
-const execute = (action: IDispatchAction, getPartialState: (StoreKey: any) => any): (StoreKey: any) => any => {
-  const partialState = { [action.type.stateKey]: action.data };
-  return getPartialState(partialState);
+const initialState: IAppState = {
+  [ActionStateKey.CURRENT_CELL]: {
+    block: -1,
+    cell: -1,
+    coords: [-1, -1]
+  },
+  [ActionStateKey.GRID_VALUES]: {
+    foo: ''
+  }
 };
 
-const reducer = (state: {}, action: IDispatchAction) => {
-  const newState = execute(action, op(state));
+const stateKeyLens = R.lensPath(['type', 'stateKey']);
+const getStateKeyWithLens = R.view<IDispatchAction, string>(stateKeyLens);
+
+const execute = (action: IDispatchAction, mergeState: (x: Partial<IAppState>) => IAppState): Partial<IAppState> => {
+  const stateKey = getStateKeyWithLens(action);
+  const partialState = R.ifElse(
+    R.isNil,
+    () => R.identity({}),
+    (actionStateKey: string) => ({ [actionStateKey]: action.data })
+  )(stateKey);
+
+  // console.log('==---=', action);
+  return mergeState(partialState);
+};
+
+const reducer = (state: IAppState, action: IDispatchAction) => {
+  const newState = execute(action, R.merge(state));
   return newState || state;
 };
 
-const store = createStore(reducer, {
-  [CellHoverAction.stateKey]: { block: -1, cell: -1, coords: [-1, -1] }
-});
+const store = createStore<Partial<IAppState>>(reducer, initialState);
 
 export class Store {
   public static Dispatch(action: IAction, data: any): void {
-    store.dispatch({ type: action, data });
+    store.dispatch({ data, type: action });
   }
 
   public static GetState(action?: IAction): any {
     if (action) {
       return store.getState()[action.stateKey];
-    } else {
-      return store.getState();
     }
+
+    return store.getState();
   }
 
   public static Subscribe(subscribe: () => any): void {
     store.subscribe(subscribe);
   }
 
-  public static GetCellHoverIndex(): IStatusData {
+  public static GetCellHoverIndex(): ICellHoverActionData {
     return Store.GetState(CellHoverAction);
   }
-  public static DispatchCellHoverAction(data: IStatusData): void {
+  public static DispatchCellHoverAction(data: ICellHoverActionData): void {
     return Store.Dispatch(CellHoverAction, data);
   }
 }

@@ -4,11 +4,11 @@ import { Block } from '../Block/index';
 import { BlockElement } from '../../types';
 import * as R from 'ramda';
 
-interface State {
-  blocks: Array<BlockElement>;
+interface IState {
+  blocks: BlockElement[];
 }
 
-export class Grid extends React.Component<any, State> {
+export class Grid extends React.Component<any, IState> {
   constructor(props: undefined) {
     super(props);
 
@@ -16,17 +16,13 @@ export class Grid extends React.Component<any, State> {
       blocks: R.times<BlockElement>(this.createBlockElement.bind(this), 9)
     };
   }
-  
-  private createBlockElement(index: number): BlockElement {
-    return <Block key={index} index={index} />;
+
+  public render() {
+    return <section className="component_grid">{this.state.blocks}</section>;
   }
 
-  render () {
-    return (
-      <section className="component_grid">
-        { this.state.blocks }
-      </section>
-    );
+  private createBlockElement(index: number): BlockElement {
+    return <Block key={index} index={index} />;
   }
 }
 

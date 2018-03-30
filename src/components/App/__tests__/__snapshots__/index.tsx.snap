@@ -16,7 +16,7 @@ exports[`renders correctly 1`] = `
         <div
           className="status_item-label"
         >
-          Current Cell Index
+          Current Block
         </div>
         <div
           className="status_item-value"
@@ -30,7 +30,7 @@ exports[`renders correctly 1`] = `
         <div
           className="status_item-label"
         >
-          Current Block
+          Current Cell Index
         </div>
         <div
           className="status_item-value"
