@@ -52,7 +52,7 @@ export class Cell extends React.Component<IProps, IState> {
       blockIndex,
       cellIndex,
       coords: [x, y],
-      value: Store.GetGridValues().values[blockIndex][cellIndex].toString()
+      value: Store.GetGridValues().values[blockIndex][cellIndex]
     });
   }
 

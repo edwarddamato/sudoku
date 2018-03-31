@@ -15,7 +15,7 @@ exports[`renders correctly 1`] = `
       onFocus={[Function]}
       placeholder="0"
       type="text"
-      value="0"
+      value=""
     />
   </div>
   <div
@@ -29,7 +29,7 @@ exports[`renders correctly 1`] = `
       onFocus={[Function]}
       placeholder="0"
       type="text"
-      value="0"
+      value=""
     />
   </div>
   <div
@@ -43,7 +43,7 @@ exports[`renders correctly 1`] = `
       onFocus={[Function]}
       placeholder="0"
       type="text"
-      value="0"
+      value=""
     />
   </div>
   <div
@@ -57,7 +57,7 @@ exports[`renders correctly 1`] = `
       onFocus={[Function]}
       placeholder="0"
       type="text"
-      value="0"
+      value=""
     />
   </div>
   <div
@@ -71,7 +71,7 @@ exports[`renders correctly 1`] = `
       onFocus={[Function]}
       placeholder="0"
       type="text"
-      value="4"
+      value=""
     />
   </div>
   <div
@@ -85,7 +85,7 @@ exports[`renders correctly 1`] = `
       onFocus={[Function]}
       placeholder="0"
       type="text"
-      value="0"
+      value=""
     />
   </div>
   <div
@@ -99,7 +99,7 @@ exports[`renders correctly 1`] = `
       onFocus={[Function]}
       placeholder="0"
       type="text"
-      value="0"
+      value=""
     />
   </div>
   <div
@@ -113,7 +113,7 @@ exports[`renders correctly 1`] = `
       onFocus={[Function]}
       placeholder="0"
       type="text"
-      value="0"
+      value=""
     />
   </div>
   <div
@@ -127,7 +127,7 @@ exports[`renders correctly 1`] = `
       onFocus={[Function]}
       placeholder="0"
       type="text"
-      value="0"
+      value=""
     />
   </div>
 </div>

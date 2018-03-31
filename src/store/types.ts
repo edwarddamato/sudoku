@@ -26,5 +26,5 @@ export interface ICellHoverActionData {
 }
 
 export interface IGridValuesActionData {
-  readonly values: number[][];
+  readonly values: string[][];
 }

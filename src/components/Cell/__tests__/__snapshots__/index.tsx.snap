@@ -12,7 +12,7 @@ exports[`renders correctly 1`] = `
     onFocus={[Function]}
     placeholder="0"
     type="text"
-    value="5"
+    value=""
   />
 </div>
 `;
