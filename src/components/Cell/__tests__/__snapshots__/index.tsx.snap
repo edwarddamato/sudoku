@@ -8,8 +8,11 @@ exports[`renders correctly 1`] = `
     className="game-cell_input"
     maxLength={1}
     onBlur={[Function]}
+    onChange={[Function]}
     onFocus={[Function]}
+    placeholder="0"
     type="text"
+    value="5"
   />
 </div>
 `;

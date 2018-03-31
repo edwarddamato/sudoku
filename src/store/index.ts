@@ -22,7 +22,17 @@ const initialState: IAppState = {
     coords: [-1, -1]
   },
   [ActionStateKey.GRID_VALUES]: {
-    foo: ''
+    values: [
+      [0, 0, 0, 0, 0, 0, 0, 0, 0],
+      [0, 1, 0, 0, 0, 0, 0, 0, 0],
+      [0, 0, 2, 0, 0, 0, 0, 0, 0],
+      [0, 0, 0, 3, 0, 0, 0, 0, 0],
+      [0, 0, 0, 0, 4, 0, 0, 0, 0],
+      [0, 0, 0, 0, 0, 5, 0, 0, 0],
+      [0, 0, 0, 0, 0, 0, 6, 0, 0],
+      [0, 0, 0, 0, 0, 0, 0, 7, 0],
+      [0, 0, 0, 0, 0, 0, 0, 0, 8]
+    ]
   }
 };
 
@@ -70,5 +80,13 @@ export class Store {
   }
   public static DispatchCellHoverAction(data: ICellHoverActionData): void {
     return Store.Dispatch(CellHoverAction, data);
+  }
+
+  public static GetGridValues(): IGridValuesActionData {
+    return Store.GetState(GridValuesAction);
+  }
+
+  public static DispatchGridValuesAction(data: IGridValuesActionData): void {
+    return Store.Dispatch(GridValuesAction, data);
   }
 }

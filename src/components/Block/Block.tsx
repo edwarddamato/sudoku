@@ -12,6 +12,8 @@ interface IState {
   cells: CellElement[];
 }
 
+const onChange = (index: number, value: string) => console.log(index, value);
+
 export class Block extends React.Component<IProps, IState> {
   constructor(props: IProps) {
     super(props);
@@ -26,7 +28,7 @@ export class Block extends React.Component<IProps, IState> {
   }
 
   private createCellElement(index: number): CellElement {
-    return <Cell key={index} blockIndex={this.props.index} index={index} />;
+    return <Cell key={index} blockIndex={this.props.index} index={index} onChange={onChange} />;
   }
 }
 
